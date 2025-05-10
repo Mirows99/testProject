@@ -3,8 +3,6 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Button } from "@repo/ui/components/button";
-import { Input } from "@repo/ui/components/input";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -25,62 +23,80 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-black text-white">
-      <div className="w-full max-w-md space-y-8 px-4">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-white">Coolify</h1>
-        </div>
+    <div style={{ 
+      display: "flex", 
+      justifyContent: "center", 
+      alignItems: "center", 
+      minHeight: "100vh" 
+    }}>
+      <div>
+        <h1 style={{ fontWeight: "bold", fontSize: "24px", marginBottom: "20px" }}>Some Tracking App</h1>
         
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="space-y-2">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300">
-              Email <span className="text-yellow-500">*</span>
+        <form onSubmit={handleSubmit}>
+          <div style={{ marginBottom: "10px" }}>
+            <label htmlFor="email">
+              Email *
             </label>
-            <Input
+            <br />
+            <input
               id="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="bg-gray-900 border-gray-800 text-white"
+              style={{ marginTop: "5px" }}
             />
           </div>
           
-          <div className="space-y-2">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-300">
-              Password <span className="text-yellow-500">*</span>
+          <div style={{ marginBottom: "10px" }}>
+            <label htmlFor="password">
+              Password *
             </label>
-            <Input
+            <br />
+            <input
               id="password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="bg-gray-900 border-gray-800 text-white"
+              style={{ marginTop: "5px" }}
             />
           </div>
           
-          <div className="text-sm">
-            <Link href="/forgot-password" className="text-gray-400 hover:text-gray-300">
+          <div style={{ marginBottom: "10px" }}>
+            <Link href="/forgot-password" style={{ color: "blue", textDecoration: "underline", fontSize: "14px" }}>
               Forgot password?
             </Link>
           </div>
           
-          <Button
-            type="submit"
-            className="w-full bg-gray-800 hover:bg-gray-700 text-white"
-            disabled={isLoading}
-          >
-            Login
-          </Button>
-          
-          <Button
-            type="button"
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
-            onClick={() => router.push("/register")}
-          >
-            Register
-          </Button>
+          <div>
+            <button 
+              type="submit" 
+              disabled={isLoading}
+              style={{ 
+                marginRight: "5px", 
+                padding: "2px 8px", 
+                backgroundColor: "#f0f0f0",
+                border: "1px solid #999",
+                borderRadius: "2px"
+              }}
+            >
+              Login
+            </button>
+            
+            <button 
+              type="button" 
+              onClick={() => router.push("/register")}
+              style={{ 
+                padding: "2px 8px", 
+                backgroundColor: "#f0f0f0",
+                border: "1px solid #999",
+                borderRadius: "2px"
+              }}
+            >
+              Register
+            </button>
+          </div>
         </form>
       </div>
     </div>

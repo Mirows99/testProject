@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Card } from "@repo/ui/card";
 import { Gradient } from "@repo/ui/gradient";
 import { TurborepoLogo } from "@repo/ui/turborepo-logo";
+import { Button } from "../../../packages/ui/src/components/button";
 
 const LINKS = [
   {
@@ -110,6 +111,15 @@ export default function Page() {
             {description}
           </Card>
         ))}
+      </div>
+
+      <div className="flex gap-4 mt-8">
+        <Button variant="default">Default Button</Button>
+        <Button variant="destructive">Destructive Button</Button>
+        <Button variant="outline">Outline Button</Button>
+        <Button variant="secondary">Secondary Button</Button>
+        <Button variant="ghost">Ghost Button</Button>
+        <Button variant="link">Link Button</Button>
       </div>
     </main>
   );

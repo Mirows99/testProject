@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Web Application Structure
+
+The main web application is a Next.js app located in [apps/web/](mdc:apps/web).
+
+## Key Files
+- [apps/web/app/layout.tsx](mdc:apps/web/app/layout.tsx) - Main layout component
+- [apps/web/app/page.tsx](mdc:apps/web/app/page.tsx) - Homepage component
+- [apps/web/app/globals.css](mdc:apps/web/app/globals.css) - Global styles
+- [apps/web/next.config.ts](mdc:apps/web/next.config.ts) - Next.js configuration
+
+## Development
+- Navigate to the web app directory: `cd apps/web`
+- Run development server: `bun run dev`
+- Build for production: `bun run build`
+

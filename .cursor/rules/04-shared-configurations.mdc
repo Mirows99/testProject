@@ -1,0 +1,21 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Shared Configuration Packages
+
+This project uses several shared configuration packages to maintain consistency across the monorepo.
+
+## TypeScript Configuration
+[packages/typescript-config/](mdc:packages/typescript-config) contains shared TypeScript configurations.
+
+## Tailwind Configuration
+[packages/tailwind-config/](mdc:packages/tailwind-config) contains the shared Tailwind CSS configuration.
+
+## ESLint Configuration
+[packages/eslint-config/](mdc:packages/eslint-config) contains shared ESLint rules and settings.
+
+## Usage
+These configurations are referenced in the respective configuration files of each application and package, ensuring consistency throughout the project.
+

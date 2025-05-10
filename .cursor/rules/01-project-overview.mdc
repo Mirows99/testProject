@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Project Overview
+
+This is a Turborepo monorepo project with Next.js applications and shared packages.
+
+## Project Structure
+- **Applications** - Located in the [apps/](mdc:apps) directory
+  - [Web Application](mdc:apps/web) - Main Next.js application
+  - [Documentation](mdc:apps/docs) - Project documentation site
+  
+- **Shared Packages** - Located in the [packages/](mdc:packages) directory
+  - [UI Components](mdc:packages/ui) - Shared UI components
+  - [TypeScript Configuration](mdc:packages/typescript-config) - Shared TypeScript configurations
+  - [Tailwind Configuration](mdc:packages/tailwind-config) - Shared Tailwind CSS setup
+  - [ESLint Configuration](mdc:packages/eslint-config) - Shared ESLint rules
+
+## Development Workflow
+- `bun run dev` - Start development environment for all apps
+- `bun run build` - Build all applications
+- `bun run lint` - Run linting on all projects
+

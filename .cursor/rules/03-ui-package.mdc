@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# UI Package
+
+The shared UI components package is located in [packages/ui/](mdc:packages/ui).
+
+## Key Files and Directories
+- [packages/ui/src/components/](mdc:packages/ui/src/components) - Reusable UI components
+- [packages/ui/src/hooks/](mdc:packages/ui/src/hooks) - Custom React hooks
+- [packages/ui/src/lib/](mdc:packages/ui/src/lib) - Utility functions and helpers
+- [packages/ui/src/card.tsx](mdc:packages/ui/src/card.tsx) - Card component
+- [packages/ui/src/gradient.tsx](mdc:packages/ui/src/gradient.tsx) - Gradient component
+- [packages/ui/src/turborepo-logo.tsx](mdc:packages/ui/src/turborepo-logo.tsx) - Turborepo logo component
+
+
+

@@ -9,6 +9,8 @@
   ],
   "exports": {
     "./styles.css": "./dist/index.css",
+    "./components/*": "./dist/components/*.js",
+    ".": "./dist/index.js",
     "./*": "./dist/*.js"
   },
   "license": "MIT",
